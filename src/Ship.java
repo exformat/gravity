@@ -33,8 +33,7 @@ public class Ship{
         this.accel = accel;
     }
 
-    public double getAccel()
-    {
+    public double getAccel(){
 
         return this.accel;
     }
@@ -54,8 +53,7 @@ public class Ship{
         this.powerTrust = powerTrust;
     }
 
-    public double getPowerTrust()
-    {
+    public double getPowerTrust(){
 
         return powerTrust;
     }

@@ -9,6 +9,10 @@ public class Start
 
         Ship ship = new Ship();
 
+
+        double anglV = 0;//0~200
+        double anglH;//NAN or 0~360
+
         double r = 6.378 * 10E6;
         double m = 5.976 * 10E24;
 
@@ -31,6 +35,8 @@ public class Start
 
                     ship.setFuelMass(ship.getFuelMass() - fuelOut);
                     ship.setMass(ship.getMass() - fuelOut);
+
+
                     ship.setHeights(ship.getHeights() + (ship.getAccel() / 1000));
                     ship.setAccel((ship.getPowerTrust() / ship.getMass()) - getAccelerationOfGravity(m, ship.getHeights()));
                     ship.setSpeed(ship.getSpeed() + (ship.getAccel() / 1000));
