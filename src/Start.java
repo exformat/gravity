@@ -10,7 +10,7 @@ public class Start
         Ship ship = new Ship();
 
 
-        double anglV = 0;//0~1
+        double anglV = 0.545;//0~1
         double anglH;//NAN or 0~360
 
         double aH = 0;
